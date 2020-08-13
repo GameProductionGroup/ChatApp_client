@@ -5,22 +5,19 @@
          <title>ChatApp</title>
          <meta charset="utf-8">
          <meta name="description" content="To Learning">
-         <link rel="stylesheet" type="text/css" href="style.css">
-         <script type="text/javascript" src="index.js"></script>
+         <link rel="stylesheet" type="text/css" href="style/style.css">
+         <script type="text/javascript" src="script/index.js"></script>
     </head>
 
     <body>
-        <table border="0">
-        <tr>
-        <td align="right"><b>メールアドレス：</b></td>
-        <td><input id="ead" type="email" name="email" value="" size="30" maxlength="20"></td>
-        </tr>
-
-        <tr>
-            <td align="right"><b>パスワード：</b></td>
-            <td><input id="pw" type="password" name="password" value="" size="6" maxlength="4"></td>
-        </tr>
-    </table>
-    <button id="post" onclick="accountCreate()"></button>
+        <form>
+        <div style="display:inline-block">
+            <p>UserName</p>
+            <input name="userName" type="text" value="" size="30" maxlength="20">
+            <p>Password</p>
+            <input name="password" type="password" value="" size="30" maxlength="4">
+        </div>
+        <input type="submit" value="送信"></button>
+        </form>
     </body>
 </html>
